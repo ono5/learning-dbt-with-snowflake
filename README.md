@@ -53,3 +53,17 @@ Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
 
 Happy modeling!
 ```
+
+## VS Code Extention
+
+```bash
+dbt Power User
+
+settings.jsonに以下を追加
+"files.associations": {
+        "*.sql": "jinja-sql"
+},
+ "dbt.sqlFmtPath": "sqlfmt",
+
+pip install 'shandy-sqlfmt[jinjafmt]'
+```
