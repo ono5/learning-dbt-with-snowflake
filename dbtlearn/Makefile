@@ -1,4 +1,4 @@
-.PHONY: debug run refresh seed compile freshness
+.PHONY: debug run refresh seed compile freshness snapshot
 
 debug:
 	dbt debug
@@ -17,3 +17,6 @@ compile:
 
 freshness:
 	dbt source freshness
+
+snapshot:
+	dbt snapshot
