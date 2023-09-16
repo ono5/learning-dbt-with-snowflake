@@ -1,4 +1,7 @@
-.PHONY: debug
+.PHONY: debug run
 
 debug:
 	dbt debug
+
+run:
+	dbt run
