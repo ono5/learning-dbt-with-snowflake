@@ -1,4 +1,4 @@
-.PHONY: debug run refresh seed
+.PHONY: debug run refresh seed compile
 
 debug:
 	dbt debug
@@ -11,3 +11,6 @@ refresh:
 
 seed:
 	dbt seed
+
+compile:
+	dbt compile
