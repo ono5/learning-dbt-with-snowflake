@@ -1,4 +1,4 @@
-.PHONY: debug run refresh
+.PHONY: debug run refresh seed
 
 debug:
 	dbt debug
@@ -8,3 +8,6 @@ run:
 
 refresh:
 	dbt run --full-refresh
+
+seed:
+	dbt seed
