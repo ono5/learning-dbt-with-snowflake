@@ -1,4 +1,4 @@
-.PHONY: debug run refresh seed compile freshness snapshot test per_test deps refresh docs serve
+.PHONY: debug run refresh seed compile freshness snapshot test per_test deps refresh docs serve compile
 
 debug:
 	dbt debug
@@ -42,3 +42,6 @@ docs:
 
 serve:
 	dbt docs serve
+
+compile:
+	dbt compile
