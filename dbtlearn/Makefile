@@ -25,4 +25,6 @@ test:
 	dbt test
 
 per_test:
+	# make per_test key=dim_listings_cleansed
+	# dbt test --select dim_listings_cleansed
 	dbt test --select ${key}
