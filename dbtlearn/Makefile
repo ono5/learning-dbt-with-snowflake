@@ -1,4 +1,4 @@
-.PHONY: debug run refresh seed compile freshness snapshot test
+.PHONY: debug run refresh seed compile freshness snapshot test per_test
 
 debug:
 	dbt debug
@@ -23,3 +23,6 @@ snapshot:
 
 test:
 	dbt test
+
+per_test:
+	dbt test --select ${key}
