@@ -1,0 +1,5 @@
+packages:
+  # https://github.com/dbt-labs/dbt-utils
+  # dbt deps
+  - package: dbt-labs/dbt_utils
+    version: 0.8.0

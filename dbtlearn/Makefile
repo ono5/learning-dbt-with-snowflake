@@ -1,4 +1,4 @@
-.PHONY: debug run refresh seed compile freshness snapshot test per_test
+.PHONY: debug run refresh seed compile freshness snapshot test per_test deps refresh
 
 debug:
 	dbt debug
@@ -28,3 +28,11 @@ per_test:
 	# make per_test key=dim_listings_cleansed
 	# dbt test --select dim_listings_cleansed
 	dbt test --select ${key}
+
+deps:
+	dbt deps
+
+refresh:
+	# dbt run --full-refresh fct_review
+	# dbt run --full-refresh
+	dbt run --full-refresh ${materialize}
