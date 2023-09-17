@@ -1,4 +1,4 @@
-.PHONY: debug run refresh seed compile freshness snapshot test per_test deps refresh
+.PHONY: debug run refresh seed compile freshness snapshot test per_test deps refresh docs serve
 
 debug:
 	dbt debug
@@ -36,3 +36,9 @@ refresh:
 	# dbt run --full-refresh fct_review
 	# dbt run --full-refresh
 	dbt run --full-refresh ${materialize}
+
+docs:
+	dbt docs generate
+
+serve:
+	dbt docs serve
